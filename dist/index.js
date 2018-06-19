@@ -268,37 +268,37 @@ var Button = function (_Component) {
       switch (buttonSize) {
         case 'large':
           buttonStyle[_mediaQueries.desktop_max] = {
-            padding: '12px 55px 12px 55px',
+            padding: '12px 55px',
             fontSize: '19px'
           };
           buttonStyle[_mediaQueries.tablet_max] = {
-            padding: '11px 55px 11px 55px',
+            padding: '11px 45px',
             fontSize: '18px'
           };
           buttonStyle[_mediaQueries.phablet_max] = {
-            padding: '10px 50px 10px 50px',
+            padding: '10px 35px',
             fontSize: '17px'
           };
           buttonStyle[_mediaQueries.phone_max] = {
-            padding: '9px 45px 9px 45px',
+            padding: '9px 30px',
             fontSize: '16px'
           };
           break;
         default:
           buttonStyle[_mediaQueries.desktop_max] = {
-            padding: '8px 30px 8px 30px',
+            padding: '8px 30px',
             fontSize: '17px'
           };
           buttonStyle[_mediaQueries.tablet_max] = {
-            padding: '7px 25px 7px 25px',
+            padding: '7px 25px',
             fontSize: '18px'
           };
           buttonStyle[_mediaQueries.phablet_max] = {
-            padding: '6px 20px 6px 24px',
+            padding: '6px 20px',
             fontSize: '15px'
           };
           buttonStyle[_mediaQueries.phone_max] = {
-            padding: '5px 18px 5px 20px',
+            padding: '5px 18px',
             fontSize: '14px'
           };
           break;

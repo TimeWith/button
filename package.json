@@ -1,6 +1,6 @@
 {
   "name": "@time-with/button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Timewith Button",
   "main": "dist/index.js",
   "license": "MIT",
