@@ -64,6 +64,9 @@ var Button = function (_Component) {
           txtColor = _props.txtColor,
           bgHoverColor = _props.bgHoverColor,
           txtHoverColor = _props.txtHoverColor,
+          animateIcon = _props.animateIcon,
+          iconAnimation = _props.iconAnimation,
+          iconAnimationTime = _props.iconAnimationTime,
           radius = _props.radius;
       var onClick = this.props.onClick;
 
@@ -83,9 +86,6 @@ var Button = function (_Component) {
       if (!buttonSize) {
         buttonSize = 'normal';
       }
-      if (!isBold) {
-        isBold = false;
-      }
       if (!color) {
         color = '#7D7B7B';
       }
@@ -104,9 +104,6 @@ var Button = function (_Component) {
       if (!borderColor) {
         borderColor = _colors.grey_medium;
       }
-      if (!isOutlined) {
-        isOutlined = false;
-      }
       if (!bgColor) {
         bgColor = _colors.orange;
       }
@@ -121,6 +118,9 @@ var Button = function (_Component) {
       }
       if (!radius) {
         radius = '50px';
+      }
+      if (!iconAnimationTime) {
+        iconAnimationTime = '5s';
       }
 
       if (!isOutlined) {
@@ -242,7 +242,9 @@ var Button = function (_Component) {
         color: 'inherit',
         fontSize: buttonSize === 'large' ? '18px' : '16px',
         position: 'relative',
-        top: '1px'
+        top: '1px',
+        animationTimingFunction: 'ease-out',
+        animation: iconAnimation ? iconAnimation + ' ' + iconAnimationTime + ' infinite' : null
       }), _defineProperty(_buttonStyle, '& span', {
         WebkitTransition: 'color 0.2s ease-out',
         MozTransition: 'color 0.2s ease-out',

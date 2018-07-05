@@ -25,6 +25,9 @@ class Button extends Component {
       txtColor,
       bgHoverColor,
       txtHoverColor,
+      animateIcon,
+      iconAnimation,
+      iconAnimationTime,
       radius
     } = this.props
 
@@ -32,24 +35,23 @@ class Button extends Component {
       onClick,
     } = this.props
 
-    if (!type)          { type = 'default' }
-    if (!label)         { label = 'Label Missing' }
-    if (!icon)          { icon = 'times' }
-    if (!iconSide)      { iconSide = 'right' }
-    if (!buttonSize)    { buttonSize = 'normal' }
-    if (!isBold)        { isBold = false }
-    if (!color)         { color = '#7D7B7B' }
-    if (!marginRight)   { marginRight = '0px' }
-    if (!marginLeft)    { marginLeft = '0px' }
-    if (!borderSize)    { borderSize = '1px' }
-    if (!borderStyle)   { borderStyle = 'solid' }
-    if (!borderColor)   { borderColor = grey_medium }
-    if (!isOutlined)    { isOutlined = false }
-    if (!bgColor)       { bgColor = orange }
-    if (!txtColor)      { txtColor = 'white' }
-    if (!bgHoverColor)  { bgHoverColor = '#e87656' }
-    if (!txtHoverColor) { txtHoverColor = 'white' }
-    if (!radius)        { radius = '50px' }
+    if (!type)              { type = 'default' }
+    if (!label)             { label = 'Label Missing' }
+    if (!icon)              { icon = 'times' }
+    if (!iconSide)          { iconSide = 'right' }
+    if (!buttonSize)        { buttonSize = 'normal' }
+    if (!color)             { color = '#7D7B7B' }
+    if (!marginRight)       { marginRight = '0px' }
+    if (!marginLeft)        { marginLeft = '0px' }
+    if (!borderSize)        { borderSize = '1px' }
+    if (!borderStyle)       { borderStyle = 'solid' }
+    if (!borderColor)       { borderColor = grey_medium }
+    if (!bgColor)           { bgColor = orange }
+    if (!txtColor)          { txtColor = 'white' }
+    if (!bgHoverColor)      { bgHoverColor = '#e87656' }
+    if (!txtHoverColor)     { txtHoverColor = 'white' }
+    if (!radius)            { radius = '50px' }
+    if (!iconAnimationTime) { iconAnimationTime = '5s' }
 
 
     if (!isOutlined) {
@@ -176,6 +178,8 @@ class Button extends Component {
         fontSize: buttonSize === 'large' ? '18px' : '16px',
         position: 'relative',
         top: '1px',
+        animationTimingFunction: 'ease-out',
+        animation: iconAnimation ? `${iconAnimation} ${iconAnimationTime} infinite` : null,
       },
       '& span': {
         WebkitTransition: 'color 0.2s ease-out',

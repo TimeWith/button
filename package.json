@@ -1,6 +1,6 @@
 {
   "name": "@time-with/button",
-  "version": "1.0.1",
+  "version": "1.1.4",
   "description": "Timewith Button",
   "main": "dist/index.js",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "@time-with/colors": "^1.0.5",
     "@time-with/media-queries": "^1.0.3",
     "@fortawesome/fontawesome": "^1.1.8",
+    "glamor": "^2.20.40",
     "glamorous": "^4.11.6"
   },
   "devDependencies": {

@@ -39,7 +39,7 @@ $ yarn add @time-with/button
 #### type (warning / info / danger / success / grey / standard / custom)
 Type: `String` Default: `standard`
 
-#### label (string)
+#### label
 Type: `String` Default: `''`
 
 #### icon (font awesome 5 icon name)
@@ -51,47 +51,53 @@ Type: `String` Default: `right`
 #### buttonSize (large / normal)
 Type: `String` Default: `normal`
 
-#### isBold (true / false)
-Type: `String` Default: `false`
+#### isBold
+Type: `Boolean` Default: `false`
 
-#### color (string)
+#### color
 Type: `String` Default: `#7D7B7B`
 
-#### marginRight (string)
-Type: `String` Default: `0px`
+#### marginRight
+Type: `Number/String` Default: `0px`
 
-#### marginLeft (string)
-Type: `String` Default: `0px`
+#### marginLeft
+Type: `Number/String` Default: `0px`
 
-#### borderSize (string)
+#### borderSize
 Type: `String` Default: `1px`
 
 #### borderStyle (solid / dashed)
 Type: `String` Default: `solid`
 
-#### borderColor (string)
+#### borderColor
 Type: `String` Default: @time-with/colors: `grey_medium`
 
-#### isOutlined (true / false)
-Type: `String` Default: `false`
+#### isOutlined
+Type: `Boolean` Default: `false`
 
-#### bgColor (string)
+#### bgColor
 Type: `String` Default: @time-with/colors: `orange`
 
-#### txtColor (string)
+#### txtColor
 Type: `String` Default: `white`
 
-#### bgHoverColor (string)
+#### bgHoverColor
 Type: `String` Default: `#e87656`
 
-#### txtHoverColor (string)
+#### txtHoverColor
 Type: `String` Default: `white`
 
-#### radius (string)
-Type: `String` Default: `50px`
+#### radius
+Type: `Number/String` Default: `50px`
 
-#### onClick (function)
-Type: `String` Default: `null`
+#### onClick
+Type: `Function` Default: `null`
+
+#### iconAnimation
+Type: `Glamor keyframes object` Default: `null`
+
+#### iconAnimationTime
+Type: `String` Default: `5s`
 
 
 ## License
