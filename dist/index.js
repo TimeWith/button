@@ -306,7 +306,9 @@ var Button = function (_Component) {
           break;
       }
 
-      var ButtonRoot = _reactEmotion2.default.button(buttonStyle);
+      var ButtonRoot = /*#__PURE__*/(0, _reactEmotion2.default)('button', {
+        target: 'e4u1u2g0'
+      })(buttonStyle);
 
       var iconEl = _react2.default.createElement(_reactFontawesome2.default, { icon: icon });
 
