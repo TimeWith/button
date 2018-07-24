@@ -14,9 +14,9 @@ var _reactFontawesome = require('@fortawesome/react-fontawesome');
 
 var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
 
-var _glamorous = require('glamorous');
+var _reactEmotion = require('react-emotion');
 
-var _glamorous2 = _interopRequireDefault(_glamorous);
+var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
 
 var _colors = require('@time-with/colors');
 
@@ -306,7 +306,7 @@ var Button = function (_Component) {
           break;
       }
 
-      var ButtonRoot = _glamorous2.default.button(buttonStyle);
+      var ButtonRoot = _reactEmotion2.default.button(buttonStyle);
 
       var iconEl = _react2.default.createElement(_reactFontawesome2.default, { icon: icon });
 

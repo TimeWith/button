@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FontAwesome from '@fortawesome/react-fontawesome'
-import glamorous from 'glamorous'
+import styled from 'react-emotion'
 import { orange, blue, green, grey_medium } from '@time-with/colors'
 import { desktop_max, tablet_max, phablet_max, phone_max } from '@time-with/media-queries'
 
@@ -244,7 +244,7 @@ class Button extends Component {
       break;
     }
         
-    const ButtonRoot = glamorous.button(buttonStyle)
+    const ButtonRoot = styled.button(buttonStyle)
 
     const iconEl = <FontAwesome icon={icon} />
 
