@@ -8,14 +8,14 @@ class Button extends Component {
   render() {
 
     let {
-      type, 
-      label, 
-      icon, 
-      iconSide, 
-      buttonSize, 
-      isBold, 
-      color, 
-      marginRight, 
+      type,
+      label,
+      icon,
+      iconSide,
+      buttonSize,
+      isBold,
+      color,
+      marginRight,
       marginLeft,
       borderSize,
       borderStyle,
@@ -37,7 +37,6 @@ class Button extends Component {
 
     if (!type)              { type = 'default' }
     if (!label)             { label = 'Label Missing' }
-    if (!icon)              { icon = 'times' }
     if (!iconSide)          { iconSide = 'right' }
     if (!buttonSize)        { buttonSize = 'normal' }
     if (!color)             { color = '#7D7B7B' }
@@ -243,10 +242,10 @@ class Button extends Component {
         }
       break;
     }
-        
+
     const ButtonRoot = styled.button(buttonStyle)
 
-    const iconEl = <FontAwesome icon={icon} />
+    const iconEl = icon ? <FontAwesome icon={icon} /> : null;
 
     return (
       <ButtonRoot onClick={onClick}>
