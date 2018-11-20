@@ -245,7 +245,7 @@ class Button extends Component {
 
     const ButtonRoot = styled.button(buttonStyle)
 
-    const iconEl = icon ? <FontAwesome icon={icon} /> : null;
+    const iconEl = icon ? <FontAwesome icon={icon} /> : null
 
     return (
       <ButtonRoot onClick={onClick}>

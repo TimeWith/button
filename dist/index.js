@@ -77,9 +77,6 @@ var Button = function (_Component) {
       if (!label) {
         label = 'Label Missing';
       }
-      if (!icon) {
-        icon = 'times';
-      }
       if (!iconSide) {
         iconSide = 'right';
       }
@@ -310,7 +307,7 @@ var Button = function (_Component) {
         target: 'e4u1u2g0'
       })(buttonStyle);
 
-      var iconEl = _react2.default.createElement(_reactFontawesome2.default, { icon: icon });
+      var iconEl = icon ? _react2.default.createElement(_reactFontawesome2.default, { icon: icon }) : null;
 
       return _react2.default.createElement(
         ButtonRoot,
