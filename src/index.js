@@ -32,6 +32,7 @@ class Button extends Component {
     } = this.props
 
     const {
+      disabled,
       onClick,
     } = this.props
 
@@ -202,6 +203,14 @@ class Button extends Component {
           color: txtHoverColor,
         },
       },
+      '&[disabled]': {
+        backgroundColor: '#E9EDF1',
+        color: '#BFC1D0',
+        ':hover': {
+          backgroundColor: '#E9EDF1 !important',
+          color: '#BFC1D0 !important',
+        },
+      },
     }
 
     switch(buttonSize) {
@@ -248,7 +257,7 @@ class Button extends Component {
     const iconEl = icon ? <FontAwesome icon={icon} /> : null
 
     return (
-      <ButtonRoot onClick={onClick}>
+      <ButtonRoot onClick={onClick} disabled={disabled}>
         { iconSide === 'left' ? iconEl : null }
         <span>{ label }</span>
         { iconSide === 'right' ? iconEl : null }
