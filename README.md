@@ -99,6 +99,8 @@ Type: `Glamor keyframes object` Default: `null`
 #### iconAnimationTime
 Type: `String` Default: `5s`
 
+#### disabled
+Type: `Boolean` Default: `false`
 
 ## License
 
