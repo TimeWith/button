@@ -141,7 +141,7 @@ class Button extends Component {
     const buttonStyle = {
       backgroundColor: bgColor,
       fontSize: buttonSize === 'large' ? '20px' : '18px',
-      padding: buttonSize === 'large' ? '13px 60px 15px 60px' : '8px 30px 8px 30px',
+      padding: buttonSize === 'large' ? '15px 60px' : '8px 30px 8px 30px',
       fontWeight: isBold ? 'bold' : 'normal',
       color: txtColor,
       outline: '0',
