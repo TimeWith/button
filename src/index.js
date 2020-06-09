@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FontAwesome from '@fortawesome/react-fontawesome'
 import styled from 'react-emotion'
 import { orange, blue, green, grey_medium } from '@time-with/colors'
 import { desktop_max, tablet_max, phablet_max, phone_max } from '@time-with/media-queries'
@@ -254,13 +253,11 @@ class Button extends Component {
 
     const ButtonRoot = styled.button(buttonStyle)
 
-    const iconEl = icon ? <FontAwesome icon={icon} /> : null
-
     return (
       <ButtonRoot onClick={onClick} disabled={disabled}>
-        { iconSide === 'left' ? iconEl : null }
+        { icon && iconSide === 'left' ? icon : null }
         <span>{ label }</span>
-        { iconSide === 'right' ? iconEl : null }
+        { icon && iconSide === 'right' ? icon : null }
       </ButtonRoot>
     );
   }
